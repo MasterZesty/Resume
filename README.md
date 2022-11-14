@@ -1,102 +1,46 @@
-# LaTeX-to-PDF with GitHub Pages + PDF.js
+# Krishna Nimbalkar's [Resume](https://masterzesty.github.io/Resume/)
 
-[![CI](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/blank.yml/badge.svg)](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/blank.yml) [![pages-build-deployment](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/xtenzQ/latex-pdfjs-viewer/actions/workflows/pages/pages-build-deployment)
+<!-- ## 👋 &nbsp;Hey there! I'm Krishna -->
 
-Builds LaTeX doc into PDF and then publishes it on GitHub Pages so we can now embed our PDF with the following link:
-```
-https://<username>.github.io/<repo>/
-```
-**[Example](https://rusetskii.dev/latex-pdfjs-viewer/)**
+### 👨🏻‍💻 &nbsp;About Me
 
-## Structure
+💡 &nbsp;I like to explore new technologies and develop software solutions and quick hacks.\
+🌱 &nbsp;My area of interest are Full Stack Web Development, Python programming , Data engineering.\
+✉️ &nbsp;You can shoot me an email at kgn272000@gmail.com! I'll try to respond as soon as I can.\
+📄 &nbsp;Please have a look at my [Resume](https://masterzesty.github.io/Resume/) for more details about me. I'm open to feedback and suggestions!
 
-- `pdfjs` - contains PDF.js viewer built from sources
-- `doc.tex` - the LaTeX document to be published
+### 🛠 &nbsp;Tech Stack
 
-## Deployment
+![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)&nbsp;
+![MySQL](https://img.shields.io/badge/MySQL-05122A?style=flat&logo=mysql&logoColor=white)&nbsp;
+![Google Cloud](https://img.shields.io/badge/Google%20Cloud-05122A?style=flat&logo=google-cloud&logoColor=white)&nbsp;
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
 
-Using GitHub Actions, LaTeX document is converted into PDF and deployed to GitHub Pages together with PDF.js viewer.
+![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongodb&logoColor=green)&nbsp;
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
+![Express.js](https://img.shields.io/badge/express.js-05122A?style=flat&logo=express&logoColor=%2361DAFB)&nbsp;
+![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)&nbsp;
 
-## Building from scratch
+![Django](https://img.shields.io/badge/-Django-05122A?style=flat&logo=django)&nbsp;
+![Flask](https://img.shields.io/badge/-Flask-05122A?style=flat&logo=flask)&nbsp;
 
-Want to build your own converter with viewer?
-1. Clone PDF.JS
-```
-$ git clone https://github.com/mozilla/pdf.js.git
-$ cd pdf.js
-```
-2. Install dependencies
-```
-$ npm install
-```
-3. Build from sources
-```
-$ gulp generic
-```
-4. Copy built sources to your repo's `pdfjs` folder
-```
-$ cp -r build/generic <your repo>/pdfjs
-```
-5. Create `index.html` in your repo on the path `<your repo>/pdfjs`
-```HTML
-<!DOCTYPE html>
-<html dir="ltr" mozdisallowselectionprint>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="google" content="notranslate">
-  </head>
-  <body style="height: 100%; width: 100%; overflow: hidden; margin:0px; background-color: rgb(82, 86, 89);">
-    <iframe src="web/viewer.html" title="CV" frameBorder="0" style="position:absolute; left: 0; top: 0;" width="100%" height="100%">
-  </body>
-</html>
-```
-6. Put your LaTeX file in the root of your repo and rename it to `doc.tex`.
-7. Create GitHub Actions workflow `build.yml` on the path `.github\workflows`:
-```YML
-name: LaTeX-to-PDF
+![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
+![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
+![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)&nbsp;
+![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
 
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-    paths:
-      - 'doc.tex'
-      - 'pdfjs/**'
-      - '.github/workflows/blank.yml'
-  pull_request:
-    branches: [ main ]
-    paths:
-      - 'doc.tex'
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+### 🤝🏻 &nbsp;Profile Links
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  build_latex:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v2
-        
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: doc.tex
-          
-      - name: Copy file
-        run: |
-          sudo mv doc.pdf pdfjs
+<a href="https://leetcode.com/KrishnaNimbalkar/"><img src="https://img.shields.io/badge/LeetCode-05122A?style=flat&logo=LeetCode"/></a>
+<a href="https://www.hackerrank.com/kgn272000"><img src="https://img.shields.io/badge/-Hackerrank-05122A?style=flat&logo=HackerRank"/></a>
+<!--- <a href="https://www.codechef.com/users/kriscode007"><img src="https://img.shields.io/badge/CodeChef-05122A?style=flat&logo=CodeChef"/></a> -->
+<!--- <a href="https://codeforces.com/profile/Krishna_Nimbalkar"><img src="https://img.shields.io/badge/Codeforces-05122A?style=flat&logo=Codeforces"/></a> -->
+<!--- <a href="https://www.hackerearth.com/@kgn272000"><img src="https://img.shields.io/badge/HackerEarth-05122A?&style=flat&logo=HackerEarth"/></a> -->
 
-      - name: Deploy to gh-pages
-        uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: gh-pages
-          FOLDER: pdfjs
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MESSAGE: "deploy website"
-```
-8. Set your GitHub Pages in Settings to the branch `gh-pages`.
+
+### 🤝🏻 &nbsp;Connect with Me
+
+<p align="center">
+<a href="https://www.linkedin.com/in/krishnanimbalkar/"><img src="https://img.shields.io/badge/Krishna%20Nimbalkar-blue?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a href="mailto:kgn272000@gmail.com"><img src="https://img.shields.io/badge/Krishna%20Nimbalkar-red?style=flat&logo=Gmail&logoColor=white"/></a>
