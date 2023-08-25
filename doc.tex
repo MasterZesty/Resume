@@ -24,7 +24,17 @@
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
+\usepackage{hyperref}
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Krishna Nimbalkar Resume SDE},
+    pdfpagemode=FullScreen,
+    }
+    
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -109,85 +119,78 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------- RESUME STARTS HERE -----------
 
 \setlength{\footskip}{5pt}
 
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
+%---------- Resume HEADING ----------
 
 \begin{center}
-	{\Huge \scshape Krishna Nimbalkar} \\ \vspace{1pt}
-	Pune, India \\ \vspace{1pt}
+
+	{\Huge \scshape Krishna Nimbalkar} \\ \vspace{1pt} Pune, India \\ \vspace{1pt}
 	\small \raisebox{-0.1\height}\faPhone\ +917020390678 ~ \href{mailto:kgn272000@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{kgn272000@gmail.com}} ~
 	\href{https://linkedin.com/in/krishnanimbalkar}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/krishnanimbalkar}} ~
 	\href{https://github.com/MasterZesty}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/MasterZesty}}
 	\vspace{-8pt}
 
- % https://github.com/MasterZesty
 \end{center}
 
-
 %-----------EDUCATION-----------
+
 \section{Education}
   \resumeSubHeadingListStart
 	\resumeSubheading
   	{Pimpri Chinchwad College of Engineering}{Aug 2018 - Jun 2022}
   	{Bachelor of Engineering in Electronics and Telecommunications (CGPA of 9.71)}{Pune, India}
   \resumeSubHeadingListEnd
-
-
+  
 %-----------EXPERIENCE-----------
 
 \section{Experience}
 \resumeSubHeadingListStart
 
-%----------- SLB EXPERIENCE -----------
+%----------- SLB EXPERIENCE Aug 2022 - Present -----------
 
-	\resumeSubheading
+\resumeSubheading
   	{Schlumberger}{Aug 2022 - Present}
   	{Associate Software Engineer}{Pune, India}
+   
   	\resumeItemListStart
 
-      \resumeItem{Implemented a Python-based solution utilizing the python requests module to extract data from an internal data source using APIs. Processed the data using pandas data frame and loaded it into GCP BigQuery. Deployed the codebase on Google Cloud Functions and scheduled it via Google Cloud Scheduler for regular data loading, facilitating seamless integration with SAC (SAP Analytics Cloud) and supporting other designated purposes.}
-        \resumeItem{Developed and updated SQL scripts for ETL, leveraging various data sources and meeting specific business requirements.}
-        \resumeItem{Developed and maintained Python DAGs for Airflow / Google Cloud Composer, leveraging its powerful orchestration capabilities to
-        schedule and execute SQL scripts for seamless data extraction, transformation, and analysis, ensuring reliable and timely data processing.}
-        \resumeItem{Implemented automated code analysis and open source security management by integrating SonarQube and WhiteSource
-        into the CI/CD pipeline, ensuring early detection and resolution of code quality issues and vulnerabilities.}
+        \resumeItem{Implemented a Python-based solution utilizing the python requests module to extract data from an internal data source using APIs. Processed the data using pandas data frame and loaded it into GCP BigQuery. Deployed the codebase on Google Cloud Functions and scheduled it via Google Cloud Scheduler for regular data loading, facilitating seamless integration with SAC (SAP Analytics Cloud) and supporting other designated purposes.}
+      
+        \resumeItem{Developed GCP BigQuery SQL scripts for ETL (Extract, Transform, Load), leveraging various data sources and meeting specific business requirements.}
+        
+        \resumeItem{Developed and maintained Python DAGs for Airflow / Google Cloud Composer, leveraging its powerful orchestration capabilities to schedule and execute SQL scripts for seamless data extraction, transformation, and analysis, ensuring reliable and timely data processing.}
+        
+        \resumeItem{Implemented automated code analysis and open source security management by integrating SonarQube and WhiteSource into the CI/CD pipeline, ensuring early detection and resolution of code quality issues and vulnerabilities.}
+        
         \resumeItem{Improved code quality, maintainability, and collaboration by
         enforcing coding standards and best practices using SonarQube, while WhiteSource identified and mitigated open source
         vulnerabilities, enhancing project security and compliance.}
        
-    	%-\resumeItem{}
-    \resumeItemListEnd
+        %-\resumeItem{}
+        
+        \resumeItemListEnd
+        
+%----------- SLB EXPERIENCE END -----------
 
-%----------- Exa Mobility EXPERIENCE -----------
-
-	% \resumeSubheading
- %  	{Exa Mobility}{Jun 2021 -- Aug 2021}
- %  	{Embedded Systems and IoT Intern}{Pune, India}
- %  	\resumeItemListStart
- %    	\resumeItem{Worked on the development of smart charging points for electric two-wheeler.}
- %    	\resumeItem{Developed a system for QR based fleet tagging using python and google sheets API.}
- %    	\resumeItem{Managed data logging of various sensors such as accelerometer, GPS, etc.}
- %    	\resumeItem{Gained hands-on experience of AWS Lambda.}
-	% \resumeItemListEnd
-
-	
   \resumeSubHeadingListEnd
+  
 \vspace{-16pt}
 
+%-----------EXPERIENCE END-----------
+
 %-----------PROJECTS-----------
+
 \section{Projects}
+
 	\vspace{-5pt}
+ 
 	\resumeSubHeadingListStart
+ 
 	\resumeProjectHeading
       	{\textbf{Data Monitoring and Acquisition System For All Terrain Vehicle} $|$ \emph{Python, MySQL} $|$ {{\href{https://github.com/MasterZesty/}{\underline{Github}}}}}{Jun 2021}
       	\resumeItemListStart
@@ -202,65 +205,102 @@
         	\resumeItem{\textbf{Automated} the entire process of human lives detection for \textbf{rescue operation} providing a more efficient solution for disaster management.}
       	\resumeItemListEnd
 	\resumeSubHeadingListEnd
-\vspace{-15pt}
+ 
+\vspace{-16pt}
 
-
-%
 %-----------Profile Links-----------
+
 \section{Profile Links}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0.0in, label={}]
  \item
 	\resumeItemListStart
+
+            %-----------Profile Link 1 -----------
     	\resumeItem {\href{https://leetcode.com/KrishnaNimbalkar/}{Leetcode}}
+
+            %-----------Profile Link 2 -----------
     	\resumeItem {\href{https://auth.geeksforgeeks.org/user/kgn272000/profile}{GeeksforGeeks}}
+
+            %-----------Profile Link 3 -----------
+    	\resumeItem {\href{https://github.com/MasterZesty}{Github}}
+     
   	\resumeItemListEnd
+   
  \end{itemize}
- \vspace{-16pt}
+ 
+ \vspace{-15pt}
 
-
-%
 %-----------PROGRAMMING SKILLS-----------
+
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+
+ \begin{itemize}[leftmargin=0.20in, label={}]
+ 
 	\small{\item{
- 	\textbf{Languages}{: Python, SQL, Java } \\
- 	\textbf{Technologies/Frameworks/Libraries}{: Google Cloud Platform, BigQuery, Cloud Composer/Airflow, Google Cloud Functions, Google Cloud Scheduler } \\
- 	\textbf{Tools}{: Git, VS Code, Azure DevOps } \\
- 	\textbf{Databases}{: MySQL, MongoDB } \\
- 	\textbf{Other}{: Data Structures and Algorithms } \\
-  \textbf{Certifications}{: Google Cloud Certified Associate Cloud Engineer, Google Cloud Certified Professional Data Engineer} \\
+ 
+ 	\textbf{Languages: }{Python, SQL, Java} \\
+  
+ 	\textbf{Technologies/Frameworks/Libraries: }{Google Cloud Platform, BigQuery, Cloud Composer/Airflow, Google Cloud Functions, Google Cloud Scheduler} \\
+  
+ 	\textbf{Tools: }{Git, VS Code, Azure DevOps} \\
+  
+ 	\textbf{Databases: }{MySQL, MongoDB } \\
+  
+ 	\textbf{Other: }{Data Structures and Algorithms} \\
+  
+        \textbf{Certifications: }{Google Cloud Certified Associate Cloud Engineer, Google Cloud Certified Professional Data Engineer} \\
+        
 	}}
+
  \end{itemize}
+ 
  \vspace{-16pt}
 
-
-%
 %-----------Achievements-----------
+
 \section{Achievements}
+
 \vspace{2pt}
- \begin{itemize}[leftmargin=0.15in, label={}]
+
+ \begin{itemize}[leftmargin=0.00in, label={}]
+ 
  \item
 	\resumeItemListStart
+ 
     	\resumeItem{Awarded the 2022 best outgoing student award for outstanding performance in academics, co-curricular and extra curricular.}
-    	\resumeItem{Winner of innovative project competition at university level. }
-    	\resumeItem{Reginal finalist in national level innovation challenge organized by IIT bombay e-yantra, among top 18 teams from 300+ teams from all over the India. }
+     
+    	\resumeItem{Winner of innovative project competition at university level.}
+     
+    	\resumeItem{Reginal finalist in national level innovation challenge organized by IIT bombay e-yantra, among top 18 teams from 300+ teams from all over the India.}
+     
   	\resumeItemListEnd
+   
  \end{itemize}
+ 
  \vspace{-16pt}
 
-
-%
 %-----------EXTRA-CURRICULAR-----------
+
 \section{Extracurricular}
+
 \vspace{2pt}
- \begin{itemize}[leftmargin=0.15in, label={}]
+
+ \begin{itemize}[leftmargin=0.00in, label={}]
  \item
 	\resumeItemListStart
+ 
     	\resumeItem {Team lead for e-yantra innovation challenge project competition 2020-21.}
+     
     	\resumeItem {President of institution of electronics and telecommunication engineers (IETE) student's forum 2021-22.}
+     
     	\resumeItem {Member of team red baron PCCOE motorsports club 2020-22.}
+     
   	\resumeItemListEnd
+   
  \end{itemize}
+ 
  \vspace{-16pt}
+
+%-----------Resume END-----------
 
 \end{document}
