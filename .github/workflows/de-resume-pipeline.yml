@@ -45,8 +45,7 @@ jobs:
           tag_name: DE_Resume_${{ steps.date.outputs.date }}
           release_name: Krishna Nimbalkar DE Resume
           body: |
-            Release created by GitHub Actions. 
-            Commit: ${{ github.event.head_commit.id }}
+            Resume Last Updated on : ${{ steps.date.outputs.date }}
           draft: false
           prerelease: false
 
