@@ -20,12 +20,16 @@ jobs:
           working_directory: de-resume
           root_file: main.tex
 
-      - name: Copy PDF file
+      - name: Copy file
         run: |
           sudo mv de-resume/main.pdf pdfjs
 
-      - name: MOVE PDF file
-        run: sudo mv "de-resume/Krishna_Nimbalkar_DE_Resume.pdf" pdfjs
+      - name: Get current date
+        run: |
+          DATE=$(date +'%d_%m_%Y')
+
+      - name: Rename PDF file with date
+        run: sudo mv pdfjs/main.pdf pdfjs/Krishna_Nimbalkar_DE_Resume.pdf
 
       - name: Deploy to gh-pages
         uses: s0/git-publish-subdir-action@develop
