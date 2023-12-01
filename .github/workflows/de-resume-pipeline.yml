@@ -4,6 +4,10 @@ on:
     branches: [ main ]
     paths:
       - 'de-resume/**'
+      - '.github/workflows/blank.yml'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   print_hello:
@@ -22,7 +26,7 @@ jobs:
 
       - name: Copy file
         run: |
-          sudo mv main.pdf pdfjs
+          sudo mv de-resume/main.pdf pdfjs
 
       - name: Get current date
         run: |
