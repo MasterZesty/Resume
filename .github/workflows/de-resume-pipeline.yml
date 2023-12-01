@@ -22,7 +22,7 @@ jobs:
 
       - name: Copy file
         run: |
-          sudo mv de-resume/main.pdf pdfjs
+          sudo mv main.pdf pdfjs
 
       - name: Get current date
         run: |
