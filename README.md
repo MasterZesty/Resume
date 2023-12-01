@@ -44,3 +44,7 @@
 <p align="center">
 <a href="https://www.linkedin.com/in/krishnanimbalkar/"><img src="https://img.shields.io/badge/Krishna%20Nimbalkar-blue?style=flat&logo=Linkedin&logoColor=white"/></a>
 <a href="mailto:kgn272000@gmail.com"><img src="https://img.shields.io/badge/Krishna%20Nimbalkar-red?style=flat&logo=Gmail&logoColor=white"/></a>
+
+
+### This Repository is inspired from
+#### [xtenzQ- latex-pdfjs-viewer](https://github.com/xtenzQ/latex-pdfjs-viewer)
