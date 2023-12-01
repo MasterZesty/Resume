@@ -14,20 +14,24 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: Print FileTree
-        run: ls
-
-      - name: cd to de-resume
-        run: cd de-resume
-
-      - name: Print de-resume FileTree
-        run: ls
-
-      - name: Compile LaTeX document
+      - name: Set up LaTeX
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: |
-            '../de-resume/main.tex'
-            './de-resume/page1sidebar.tex'
-            './de-resume/page2sidebar.tex'
-            './de-resume/altacv.cls'
+          working_directory: de-resume
+          root_file: main.tex
+
+      - name: Copy PDF file
+        run: |
+          sudo mv de-resume/main.pdf pdfjs
+
+      - name: MOVE PDF file
+        run: sudo mv "de-resume/Krishna_Nimbalkar_DE_Resume.pdf" pdfjs
+
+      - name: Deploy to gh-pages
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: pdfjs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "deploy website"
