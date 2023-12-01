@@ -1,6 +1,9 @@
+
+[![de-resume-pipeline](https://github.com/MasterZesty/Resume/actions/workflows/de-resume-pipeline.yml/badge.svg?branch=main)](https://github.com/MasterZesty/Resume/actions/workflows/de-resume-pipeline.yml)
 # Krishna Nimbalkar's [Resume](https://masterzesty.github.io/Resume/)
 
 <!-- ## 👋 &nbsp;Hey there! I'm Krishna -->
+
 
 ### 👨🏻‍💻 &nbsp;About Me
 
