@@ -1,0 +1,33 @@
+name: de-resume-pipeline
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'de-resume/**'
+
+jobs:
+  print_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - name: Print FileTree
+        run: ls
+
+      - name: cd to de-resume
+        run: cd de-resume
+
+      - name: Print de-resume FileTree
+        run: ls
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: |
+            '../de-resume/main.tex'
+            './de-resume/page1sidebar.tex'
+            './de-resume/page2sidebar.tex'
+            './de-resume/altacv.cls'

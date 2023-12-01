@@ -1,0 +1,125 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+  \usepackage{hyperref}
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+
+    
+\begin{document}
+\name{KRISHNA NIMBALKAR}
+\personalinfo{%
+  \mailaddress{kgn272000@gmail.com}
+  \phone{+91 7020390678}
+   % \location{Pune - India}
+   \linkedin{\href{https://www.linkedin.com/in/krishnanimbalkar/}{linkedin.com/in/krishnanimbalkar/} }
+   \github{\href{https://github.com/MasterZesty}{github.com/MasterZesty}}
+  
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Experience}
+\smallskip
+\cvevent{Associate Software Engineer}{Schlumberger}{Aug 2022 - Nov 2023}{Pune, India}
+\begin{itemize}
+\item Built data pipelines by developing approximately 10 Python DAGs and over 50 tasks for Airflow / Google Cloud Composer, leveraging its powerful orchestration capabilities to schedule and execute BigQuery ETL SQL scripts for seamless data extraction, transformation, and analysis, ensuring reliable and timely data processing.
+% \smallskip
+\item Implemented automated code analysis and open source security management by integrating SonarQube and WhiteSource into the Azure DevOps CI/CD pipeline, ensuring early detection and resolution of code quality issues and vulnerabilities.
+% \smallskip
+% \item Demonstrated commitment to industry best practices and continuous improvement by integrating widely recognized DevSecOps tools, resulting in enhanced security, reduced technical debt, and faster iterations for delivering reliable and high-quality software.
+\item Developed a Python-based solution utilizing the python requests module to extract data from an internal data source using APIs. Processed the data using pandas data frame and loaded it into GCP BigQuery. Deployed the codebase on Google Cloud Functions and scheduled it via Google Cloud Scheduler for regular data loading.
+\smallskip
+\end{itemize}
+
+% \divider
+
+% \cvevent{SDE Intern}{Desi QnA}{Jan 2022 - Mar 2022}{Remote}
+% \begin{itemize}
+% \item Supervised Learning, worked on SL to train model to recognize the pattern in given data with more efficiently 
+% \smallskip
+% \item Worked on support vector machines (SVMs, also support vector networks) which is supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis.
+% \end{itemize}
+
+% \divider
+
+\cvsection{TECHNICAL SKILLS}
+\smallskip
+\begin{itemize}
+\item \textbf{Languages:} Python, SQL
+\item \textbf{Technologies:} Google Cloud Platform, BigQuery, Cloud Composer/Airflow, Google Cloud Functions, Google Cloud Scheduler
+\item \textbf{Frameworks/Libraries:} Django, Flask, FastAPI
+\item \textbf{Tools:} Git, VS Code, Azure DevOps
+\item \textbf{Databases:} MySQL
+\item \textbf{Other:} Data structures and Algorithms
+\item \textbf{Certifications:} Google Cloud Certified Associate Cloud Engineer, Google Cloud Certified Professional Data Engineer
+\end{itemize}
+
+\cvsection{Achievements}
+% write some coding achivements
+\smallskip
+\begin{itemize}
+\item Awarded the 2022 best outgoing student award for outstanding performance in academics, co-curricular and extra
+curricular.
+\smallskip
+\item Winner of innovative project competition at university level.
+\smallskip
+\item Reginal finalist in national level innovation challenge organized by IIT bombay e-yantra, among top 18 teams from
+300+ teams from all over the India.
+\end{itemize}
+
+\cvsection{Profile Links}
+\smallskip
+\begin{itemize}
+\item {\href{https://leetcode.com/KrishnaNimbalkar/}{\textcolor{blue}{LeetCode : \underline{https://leetcode.com/KrishnaNimbalkar/ }}}}
+\smallskip
+\item {\href{https://github.com/MasterZesty}{\textcolor{blue}{GitHub : \underline{https://github.com/MasterZesty}}}}
+\smallskip
+\item {\href{https://www.linkedin.com/in/krishnanimbalkar/}{\textcolor{blue}{Linkedin : \underline{https://www.linkedin.com/in/krishnanimbalkar/}}}}
+\item {\href{https://auth.geeksforgeeks.org/user/kgn272000/profile}{\textcolor{blue}{GFG : \underline{https://auth.geeksforgeeks.org/user/kgn272000/profile}}}}
+\end{itemize}
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
+
+
