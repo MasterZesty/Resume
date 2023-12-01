@@ -29,8 +29,9 @@ jobs:
           sudo mv de-resume/main.pdf pdfjs
 
       - name: Get current date
+        id: date
         run: |
-          DATE=$(date +'%d_%m_%Y')
+          echo "::set-output name=date::$(date +'%d_%m_%Y')"
 
       - name: Rename PDF file with date
         run: sudo mv pdfjs/main.pdf pdfjs/Krishna_Nimbalkar_DE_Resume.pdf
