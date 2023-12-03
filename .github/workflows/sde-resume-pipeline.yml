@@ -51,7 +51,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: SDE_Resume_6_${{ steps.date.outputs.date }}
+          tag_name: SDE_Resume_7_${{ steps.date.outputs.date }}
           release_name: Krishna Nimbalkar SDE Resume
           body: |
             Resume Last Updated on : ${{ steps.date.outputs.date }}
@@ -90,7 +90,7 @@ jobs:
           cd Resume
           pwd
           ls
-          git checkout gh-pages
+          git checkout origin/gh-pages
           pwd
           ls
           sudo mv ../../pdfjs/resume/Krishna_Nimbalkar_SDE_Resume.pdf ./resume
