@@ -81,9 +81,11 @@ jobs:
       - name: Push Resume to gh-pages
         run: |
           mkdir temp
+          cd temp
           git clone https://github.com/MasterZesty/Resume.git
+          cd Resume
           git checkout gh-pages
-          sudo mv pdfjs/resume/Krishna_Nimbalkar_SDE_Resume.pdf temp/gh-pages/resume
+          sudo mv ../pdfjs/resume/Krishna_Nimbalkar_SDE_Resume.pdf temp/Resume/resume
           git add .
           git commit -m "add sde resume"
           git push origin gh-pages
