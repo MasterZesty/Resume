@@ -18,12 +18,23 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
+      - name: FileTree
+        run: |
+          ls
+
       - name: Set up LaTeX
         uses: xu-cheng/latex-action@v2
         with:
           working_directory: 1-de-resume
           root_file: main.tex
-          args: -jobname=Krishna_Nimbalkar_DE_Resume main.tex
+
+      - name: FileTree
+        run: |
+          ls
+
+      - name: Rename file
+        run: |
+          sudo mv 1-de-resume/main.pdf 1-de-resume/Krishna_Nimbalkar_DE_Resume.pdf
 
       - name: Copy file
         run: |
@@ -34,7 +45,7 @@ jobs:
         run: |
           echo "::set-output name=date::$(date +'%d/%m/%Y')"
 
-      - name: Create Resume Release
+      - name: Create DE Resume Release
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -54,15 +65,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: pdfjs/Krishna_Nimbalkar_FE_Resume.pdf
-          asset_name: Krishna_Nimbalkar_FE_Resume.pdf
+          asset_path: pdfjs/Krishna_Nimbalkar_DE_Resume.pdf
+          asset_name: Krishna_Nimbalkar_DE_Resume.pdf
           asset_content_type: application/pdf
 
-      # - name: Deploy to gh-pages
-      #   uses: s0/git-publish-subdir-action@develop
-      #   env:
-      #     REPO: self
-      #     BRANCH: gh-pages
-      #     FOLDER: pdfjs
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     MESSAGE: "deploy website"
+      - name: Deploy to gh-pages
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: pdfjs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "deploy website"
