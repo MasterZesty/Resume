@@ -38,7 +38,7 @@ jobs:
 
       - name: Copy file
         run: |
-          sudo mv 1-de-resume/Krishna_Nimbalkar_DE_Resume.pdf pdfjs
+          sudo mv 1-de-resume/Krishna_Nimbalkar_DE_Resume.pdf pdfjs/resume
 
       - name: Get current date
         id: date
