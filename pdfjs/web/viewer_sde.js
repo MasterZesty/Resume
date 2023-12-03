@@ -65,7 +65,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   defaultUrl: {
-    value: "../resume/Krishna_Nimbalkar_DE_Resume.pdf",
+    value: "../resume/Krishna_Nimbalkar_SDE_Resume.pdf",
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {

@@ -1,8 +1,10 @@
-
-[![de-resume-pipeline](https://github.com/MasterZesty/Resume/actions/workflows/de-resume-pipeline.yml/badge.svg?branch=main)](https://github.com/MasterZesty/Resume/actions/workflows/de-resume-pipeline.yml)
+[![de-resume-pipeline](https://github.com/MasterZesty/Resume/actions/workflows/de-resume-pipeline.yml/badge.svg)](https://github.com/MasterZesty/Resume/actions/workflows/de-resume-pipeline.yml)
+[![sde-resume-pipeline](https://github.com/MasterZesty/Resume/actions/workflows/sde-resume-pipeline.yml/badge.svg)](https://github.com/MasterZesty/Resume/actions/workflows/sde-resume-pipeline.yml)
+[![be-resume-pipeline](https://github.com/MasterZesty/Resume/actions/workflows/be-resume-pipeline.yml/badge.svg)](https://github.com/MasterZesty/Resume/actions/workflows/be-resume-pipeline.yml)
+[![fe-resume-pipeline](https://github.com/MasterZesty/Resume/actions/workflows/fe-resume-pipeline.yml/badge.svg)](https://github.com/MasterZesty/Resume/actions/workflows/fe-resume-pipeline.yml)
 [![pages-build-deployment](https://github.com/MasterZesty/Resume/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/MasterZesty/Resume/actions/workflows/pages/pages-build-deployment)
 
-act -j print_hello
+<!-- act -j for github action local-->
 # Krishna Nimbalkar's [Resume](https://masterzesty.github.io/Resume/)
 
 <!-- ## 👋 &nbsp;Hey there! I'm Krishna -->
