@@ -51,7 +51,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: SDE_Resume_1_${{ steps.date.outputs.date }}
+          tag_name: SDE_Resume_2_${{ steps.date.outputs.date }}
           release_name: Krishna Nimbalkar SDE Resume
           body: |
             Resume Last Updated on : ${{ steps.date.outputs.date }}
@@ -91,7 +91,7 @@ jobs:
           git checkout gh-pages
           pwd
           ls
-          ls ../pdfjs/resume/
+          ls .../pdfjs/resume/
           sudo mv ../pdfjs/resume/Krishna_Nimbalkar_SDE_Resume.pdf temp/Resume/resume
           git add .
           git commit -m "add sde resume"
