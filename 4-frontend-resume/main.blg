@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[105] biber:340> INFO - === Sun Dec  3, 2023, 20:17:01
+[124] Biber.pm:419> INFO - Reading 'main.bcf'
+[219] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[234] Biber.pm:4419> INFO - Processing section 0
+[246] Biber.pm:4610> INFO - Looking for bibtex file 'sample.bib' for section 0
+[247] bibtex.pm:1713> INFO - LaTeX decoding ...
+[259] bibtex.pm:1519> INFO - Found BibTeX data source 'sample.bib'
+[321] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[321] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[321] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[322] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[327] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[331] bbl.pm:763> INFO - Output to main.bbl
