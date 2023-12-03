@@ -51,7 +51,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          # tag_name: SDE_Resume_${{ steps.date.outputs.date }}
+          tag_name: SDE_Resume_${{ steps.date.outputs.date }}
           release_name: Krishna Nimbalkar SDE Resume
           body: |
             Resume Last Updated on : ${{ steps.date.outputs.date }}
