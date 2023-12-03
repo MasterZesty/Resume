@@ -44,7 +44,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: DE_Resume_${{ steps.date.outputs.date }}
-          release_name: Krishna Nimbalkar FE Resume
+          release_name: Krishna Nimbalkar DE Resume
           body: |
             Resume Last Updated on : ${{ steps.date.outputs.date }}
           draft: false
