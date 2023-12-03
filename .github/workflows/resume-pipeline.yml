@@ -1,16 +1,16 @@
-name: de-resume-pipeline
+name: be-resume-pipeline
 on:
   push:
     branches: [ main ]
     paths:
-      - '1-de-resume/**'
+      - '3-backend-resume/**'
       - '.github/workflows/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
-  Build_DE_Resume:
+  Build_BE_Resume:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,13 +21,13 @@ jobs:
       - name: Set up LaTeX
         uses: xu-cheng/latex-action@v2
         with:
-          working_directory: 1-de-resume
+          working_directory: 4-frontend-resume
           root_file: main.tex
-          args: -jobname=Krishna_Nimbalkar_DE_Resume main.tex
+          args: -jobname=Krishna_Nimbalkar_FE_Resume main.tex
 
       - name: Copy file
         run: |
-          sudo mv 1-de-resume/Krishna_Nimbalkar_DE_Resume.pdf pdfjs
+          sudo mv 4-frontend-resume/Krishna_Nimbalkar_FE_Resume.pdf pdfjs
 
       - name: Get current date
         id: date
@@ -40,7 +40,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: DE_Resume_${{ steps.date.outputs.date }}
+          tag_name: FE_Resume_${{ steps.date.outputs.date }}
           release_name: Krishna Nimbalkar FE Resume
           body: |
             Resume Last Updated on : ${{ steps.date.outputs.date }}
@@ -58,11 +58,11 @@ jobs:
           asset_name: Krishna_Nimbalkar_FE_Resume.pdf
           asset_content_type: application/pdf
 
-      # - name: Deploy to gh-pages
-      #   uses: s0/git-publish-subdir-action@develop
-      #   env:
-      #     REPO: self
-      #     BRANCH: gh-pages
-      #     FOLDER: pdfjs
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     MESSAGE: "deploy website"
+      - name: Deploy to gh-pages
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: pdfjs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "deploy website"

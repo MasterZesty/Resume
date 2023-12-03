@@ -1,5 +1,6 @@
 
 [![de-resume-pipeline](https://github.com/MasterZesty/Resume/actions/workflows/de-resume-pipeline.yml/badge.svg?branch=main)](https://github.com/MasterZesty/Resume/actions/workflows/de-resume-pipeline.yml)
+[![pages-build-deployment](https://github.com/MasterZesty/Resume/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/MasterZesty/Resume/actions/workflows/pages/pages-build-deployment)
 
 act -j print_hello
 # Krishna Nimbalkar's [Resume](https://masterzesty.github.io/Resume/)
