@@ -4,7 +4,7 @@ on:
     branches: [ main ]
     paths:
       - '2-sde-resume/**'
-      # - '.github/workflows/**'
+      - '.github/workflows/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,45 +18,56 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
+      - name: FileTree
+        run: |
+          ls
+
       - name: Set up LaTeX
         uses: xu-cheng/latex-action@v2
         with:
           working_directory: 2-sde-resume
           root_file: main.tex
-          args: -jobname=Krishna_Nimbalkar_SDE_Resume main.tex
+
+      - name: FileTree
+        run: |
+          ls
+
+      - name: Rename file
+        run: |
+          sudo mv 2-sde-resume/main.pdf 2-sde-resume/Krishna_Nimbalkar_SDE_Resume.pdf
 
       - name: Copy file
         run: |
-          sudo mv 2-sde-resume/Krishna_Nimbalkar_SDE_Resume.pdf pdfjs
+          sudo mv 2-sde-resume/Krishna_Nimbalkar_SDE_Resume.pdf pdfjs/resume
 
       - name: Get current date
         id: date
         run: |
           echo "::set-output name=date::$(date +'%d/%m/%Y')"
 
-      - name: Create Resume Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: SDE_Resume_${{ steps.date.outputs.date }}
-          release_name: Krishna Nimbalkar SDE Resume
-          body: |
-            Resume Last Updated on : ${{ steps.date.outputs.date }}
-          draft: false
-          prerelease: false
+      # - name: Create SDE Resume Release
+      #   id: create_release
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: SDE_Resume_${{ steps.date.outputs.date }}
+      #     release_name: Krishna Nimbalkar SDE Resume
+      #     body: |
+      #       Resume Last Updated on : ${{ steps.date.outputs.date }}
+      #     draft: false
+      #     prerelease: false
 
-      - name: Upload Resume Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: pdfjs/Krishna_Nimbalkar_SDE_Resume.pdf
-          asset_name: Krishna_Nimbalkar_SDE_Resume.pdf
-          asset_content_type: application/pdf
+      # - name: Upload Resume Release Asset
+      #   id: upload-release-asset
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #     asset_path: pdfjs/resume/Krishna_Nimbalkar_SDE_Resume.pdf
+      #     asset_name: Krishna_Nimbalkar_SDE_Resume.pdf
+      #     asset_content_type: application/pdf
 
       # - name: Deploy to gh-pages
       #   uses: s0/git-publish-subdir-action@develop
