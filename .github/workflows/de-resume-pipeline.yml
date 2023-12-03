@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths:
       - '1-de-resume/**'
-      - '.github/workflows/**'
+      # - '.github/workflows/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
