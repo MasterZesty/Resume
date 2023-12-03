@@ -18,19 +18,11 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: FileTree
-        run: |
-          ls
-
       - name: Set up LaTeX
         uses: xu-cheng/latex-action@v2
         with:
           working_directory: 2-sde-resume
           root_file: main.tex
-
-      - name: FileTree
-        run: |
-          ls
 
       - name: Rename file
         run: |
@@ -51,7 +43,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: SDE_Resume_8_${{ steps.date.outputs.date }}
+          tag_name: SDE_Resume_${{ steps.date.outputs.date }}
           release_name: Krishna Nimbalkar SDE Resume
           body: |
             Resume Last Updated on : ${{ steps.date.outputs.date }}
@@ -69,31 +61,16 @@ jobs:
           asset_name: Krishna_Nimbalkar_SDE_Resume.pdf
           asset_content_type: application/pdf
 
-      # - name: Deploy to gh-pages
-      #   uses: s0/git-publish-subdir-action@develop
-      #   env:
-      #     REPO: self
-      #     BRANCH: gh-pages
-      #     FOLDER: pdfjs
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     MESSAGE: "deploy website"
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update SDE Resume
 
-      - name: Push Resume to gh-pages
-        run: |
-          git config --global user.email "kgn272000@gmail.com"
-          git config --global user.name "MasterZesty"
-          pwd
-          ls
-          mkdir temp
-          cd temp
-          git clone https://github.com/MasterZesty/Resume.git
-          cd Resume
-          pwd
-          ls
-          git checkout gh-pages
-          pwd
-          ls
-          sudo mv ../../pdfjs/resume/Krishna_Nimbalkar_SDE_Resume.pdf ./resume
-          git add .
-          git commit -m "add sde resume"
-          git push origin gh-pages
+      - name: Deploy to gh-pages
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: pdfjs
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "deploy website"
+
