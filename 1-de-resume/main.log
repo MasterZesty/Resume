@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  19 APR 2024 20:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  19 APR 2024 20:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1525,11 +1525,16 @@ File: TS1lato-TLF.fd 2019/06/24 Font definitions for TS1/lato-TLF.
 LaTeX Font Info:    Font shape `TS1/lato-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 13.
 )
+Overfull \hbox (2.94904pt too wide) in paragraph at lines 51--52
+\T1/lato-TLF/m/n/9 struc-tured data by in-te-grat-ing more than 10 mil-lion raw
+ records 
+ []
+
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 74.
+(Font)              scaled to size 9.0pt on input line 76.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 99.
- [1
+(Font)              <6> on input line 88.
+[1
 
 {/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/opt/texlive
 /texdir/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc}{/opt/texlive/texdir/texmf
@@ -1546,17 +1551,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33258 strings out of 474104
- 662073 string characters out of 5745485
- 1969493 words of memory out of 5000000
- 55130 multiletter control sequences out of 15000+600000
+ 33259 strings out of 474104
+ 662087 string characters out of 5745485
+ 1970493 words of memory out of 5000000
+ 55131 multiletter control sequences out of 15000+600000
  805936 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,6n,121p,1149b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pf
 b></opt/texlive/texdir/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb></opt
 /texlive/texdir/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb>
-Output written on main.pdf (1 page, 83830 bytes).
+Output written on main.pdf (1 page, 89109 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
