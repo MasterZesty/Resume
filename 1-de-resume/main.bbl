@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{ydnt/global//global/global}
-    \entry{zou2013bilingual}{inproceedings}{}
+  \datalist[entry]{ydnt/global//global/global/global}
+    \entry{zou2013bilingual}{inproceedings}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=b0924b936369e14f1fb0840c77505126}{%
            family={Zou},
@@ -48,10 +48,12 @@
       }
       \strng{namehash}{260460effb210d66eddbfbcc2df23a92}
       \strng{fullhash}{bef66bbe2849c86ade392c9ceab893cd}
+      \strng{fullhashraw}{bef66bbe2849c86ade392c9ceab893cd}
       \strng{bibnamehash}{260460effb210d66eddbfbcc2df23a92}
       \strng{authorbibnamehash}{260460effb210d66eddbfbcc2df23a92}
       \strng{authornamehash}{260460effb210d66eddbfbcc2df23a92}
       \strng{authorfullhash}{bef66bbe2849c86ade392c9ceab893cd}
+      \strng{authorfullhashraw}{bef66bbe2849c86ade392c9ceab893cd}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extradatescope}{labelyear}
@@ -65,7 +67,7 @@
       \field{pages}{1393\bibrangedash 1398}
       \range{pages}{6}
     \endentry
-    \entry{Codishetal2000}{article}{}
+    \entry{Codishetal2000}{article}{}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=26e41f7165c5e1fa0830964c789b8496}{%
            family={Codish},
@@ -88,10 +90,12 @@
       }
       \strng{namehash}{03aef81f0e9541a9ea1071b762233dc6}
       \strng{fullhash}{03aef81f0e9541a9ea1071b762233dc6}
+      \strng{fullhashraw}{03aef81f0e9541a9ea1071b762233dc6}
       \strng{bibnamehash}{03aef81f0e9541a9ea1071b762233dc6}
       \strng{authorbibnamehash}{03aef81f0e9541a9ea1071b762233dc6}
       \strng{authornamehash}{03aef81f0e9541a9ea1071b762233dc6}
       \strng{authorfullhash}{03aef81f0e9541a9ea1071b762233dc6}
+      \strng{authorfullhashraw}{03aef81f0e9541a9ea1071b762233dc6}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extradatescope}{labelyear}
@@ -107,7 +111,7 @@
       \field{pages}{251\bibrangedash 263}
       \range{pages}{13}
     \endentry
-    \entry{Conway2000}{book}{}
+    \entry{Conway2000}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0e631663fc0bfbe3faf4b587dbfe9801}{%
            family={Conway},
@@ -124,10 +128,12 @@
       }
       \strng{namehash}{0e631663fc0bfbe3faf4b587dbfe9801}
       \strng{fullhash}{0e631663fc0bfbe3faf4b587dbfe9801}
+      \strng{fullhashraw}{0e631663fc0bfbe3faf4b587dbfe9801}
       \strng{bibnamehash}{0e631663fc0bfbe3faf4b587dbfe9801}
       \strng{authorbibnamehash}{0e631663fc0bfbe3faf4b587dbfe9801}
       \strng{authornamehash}{0e631663fc0bfbe3faf4b587dbfe9801}
       \strng{authorfullhash}{0e631663fc0bfbe3faf4b587dbfe9801}
+      \strng{authorfullhashraw}{0e631663fc0bfbe3faf4b587dbfe9801}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extradatescope}{labelyear}
@@ -138,7 +144,7 @@
       \field{year}{2000}
       \true{nocite}
     \endentry
-    \entry{Huetal2000}{inproceedings}{}
+    \entry{Huetal2000}{inproceedings}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=30c3519915a07c272d6fd946f3eaa35a}{%
            family={Hu},
@@ -174,10 +180,12 @@
       }
       \strng{namehash}{d7b82988f345830c24933aaa58c956ca}
       \strng{fullhash}{8799e44d5c4017e6a23b5c673fd74257}
+      \strng{fullhashraw}{8799e44d5c4017e6a23b5c673fd74257}
       \strng{bibnamehash}{d7b82988f345830c24933aaa58c956ca}
       \strng{authorbibnamehash}{d7b82988f345830c24933aaa58c956ca}
       \strng{authornamehash}{d7b82988f345830c24933aaa58c956ca}
       \strng{authorfullhash}{8799e44d5c4017e6a23b5c673fd74257}
+      \strng{authorfullhashraw}{8799e44d5c4017e6a23b5c673fd74257}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extradatescope}{labelyear}
@@ -191,7 +199,7 @@
       \field{pages}{398\bibrangedash 403}
       \range{pages}{6}
     \endentry
-    \entry{Meyer2000}{article}{}
+    \entry{Meyer2000}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=1c24758d867f50366cc4c583ba87fb79}{%
            family={Meyer},
@@ -202,10 +210,12 @@
       }
       \strng{namehash}{1c24758d867f50366cc4c583ba87fb79}
       \strng{fullhash}{1c24758d867f50366cc4c583ba87fb79}
+      \strng{fullhashraw}{1c24758d867f50366cc4c583ba87fb79}
       \strng{bibnamehash}{1c24758d867f50366cc4c583ba87fb79}
       \strng{authorbibnamehash}{1c24758d867f50366cc4c583ba87fb79}
       \strng{authornamehash}{1c24758d867f50366cc4c583ba87fb79}
       \strng{authorfullhash}{1c24758d867f50366cc4c583ba87fb79}
+      \strng{authorfullhashraw}{1c24758d867f50366cc4c583ba87fb79}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extradatescope}{labelyear}
