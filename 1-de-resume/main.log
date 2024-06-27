@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.5)  27 JUN 2024 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.5)  27 JUN 2024 19:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1531,6 +1531,12 @@ Overfull \hbox (2.94904pt too wide) in paragraph at lines 51--52
  records 
  []
 
+
+Overfull \hbox (0.23743pt too wide) in paragraph at lines 68--70
+\T1/lato-TLF/m/n/9 loaded it into GCP Big-Query. De-ployed the so-lu-tion on Go
+ogle 
+ []
+
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 77.
 LaTeX Font Info:    External font `cmex7' loaded for size
@@ -1564,7 +1570,7 @@ Here is how much of TeX's memory you used:
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pf
 b></opt/texlive/texdir/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb></opt
 /texlive/texdir/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb>
-Output written on main.pdf (1 page, 89222 bytes).
+Output written on main.pdf (1 page, 89924 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
